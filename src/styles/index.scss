@@ -1,0 +1,20 @@
+// My Bootstrap configuration
+@import './custom-bootstrap';
+
+// Bootstrap library
+@import 'bootstrap/scss/bootstrap';
+
+// Project styles
+@import '../components/section1/section1';
+@import '../components/scrollManager/scrollManager';
+@import '../components/threejsAnim/threejsBasicAnim/threejsBasicAnim';
+@import '../components/threejsAnim/threejsModel/threejsModel';
+@import '../components/scrollManager/components/scrollNavigation/scrollNavigation';
+@import '../components/animBodymovin/animBodymovin';
+@import '../scenes/home/home';
+
+.app {
+  // height: 1000vh;
+  // overflow: scroll;
+  // height: 100vh;
+}

@@ -1,0 +1,21 @@
+.scene-home {
+  background-color: #3f7fc1;
+  min-height: 100vh;
+  margin: 0 -15px;
+
+  .wrapper {
+    @extend .row;
+  }
+
+  .logo {
+    @extend .col-sm-12;
+    @extend .mx-auto;
+    height: 100px;
+    margin-top: 10%;
+    max-width: 400px;
+    text-align: center;
+    border-radius: 15px;
+    background-color: #7eccdd;
+    color: #ffffff;
+  }
+}

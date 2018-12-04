@@ -1,0 +1,47 @@
+.scroll-navigation {
+  @extend .navbar;
+  @extend .navbar-expand-lg;
+  @extend .navbar-dark;
+  @extend .fixed-top;
+  opacity: 0.5;
+
+  background-color: #3e74ae;
+
+  .navbar-collapse {
+    justify-content: center;
+
+    .nav-link {
+      color: #ffffff;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.active {
+  color: red;
+}
+
+.navbar-nav {
+  .nav-link {
+    @include hover-focus {
+      color: $navbar-light-hover-color;
+    }
+
+    &.disabled {
+      color: $navbar-light-disabled-color;
+      pointer-events: none;
+    }
+
+    &.active {
+      color: red;
+    }
+  }
+
+  .show > .nav-link,
+  .active > .nav-link,
+  .nav-link.show,
+  .nav-link.active {
+    color: $navbar-light-active-color;
+  }
+}
