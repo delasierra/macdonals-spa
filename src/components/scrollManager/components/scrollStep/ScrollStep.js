@@ -15,7 +15,6 @@ class ScrollStep extends Component {
     };
   }
 
-  // getters
   getRelativePosX() {
     return Math.abs(this.stepWraperBoundaries.left - window.innerWidth);
   }
@@ -31,7 +30,6 @@ class ScrollStep extends Component {
     );
   }
 
-  // Lifecycle hooks
   componentWillUpdate(nextProps, nextState) {
     this.stepWraperBoundaries = this.props.refProp.current.getBoundingClientRect();
 

@@ -42,7 +42,6 @@ class scrollManager extends Component {
       : SCROLL_DIRECTION.UP;
   }
 
-  // Lifecycle hooks
   componentDidMount() {
     this.getScrollWraper().addEventListener('scroll', this.scrollHandler);
   }
@@ -71,7 +70,7 @@ class scrollManager extends Component {
     });
 
     return (
-      <div ref={this.props.scrollWraper} className="scroll-wraper">
+      <div ref={this.props.scrollWraper} className='scroll-wraper'>
         {this.childrenWithScrollProps}
       </div>
     );

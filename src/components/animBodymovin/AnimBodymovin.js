@@ -4,17 +4,15 @@ import animationData from './b_bodymovin.json';
 // import "./App.css";
 
 class AnimBodyMovin extends Component {
-  //properties
   animationIsAttached = false;
 
-  //lifecycle
   componentDidMount() {
     this.attachAnimation();
   }
 
   render() {
     return (
-      <div className="container">
+      <div className='container'>
         <div
           ref={animationDiv => {
             this.animationContainer = animationDiv;
@@ -24,7 +22,6 @@ class AnimBodyMovin extends Component {
     );
   }
 
-  //animations
   attachAnimation = () => {
     if (this.animationContainer !== undefined && !this.animationIsAttached) {
       const animationProperties = {
